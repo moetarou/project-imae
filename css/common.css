@@ -1,0 +1,167 @@
+    html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+        font-family: YuGothic;
+        letter-spacing: 0.04em;
+        font-weight: bold;
+    }
+    ol, ul {
+        list-style: none;
+        text-decoration: none;
+    }
+    a:link, a:visited, a:active {
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    :any-link {
+        color: #000000;
+    }
+    .infolink_link {
+        color: #00AD7D;
+        border-bottom: 1px solid #00AD7D;
+    }
+    .infolink_btn {
+        background-color: #295caa;
+        border-radius: 8px;
+        color: #ffffff;
+        padding: 10px 20px;
+        display: inline-block;
+        margin-top: 40px;
+    }
+    .bp {
+        margin-right: 240px;
+        margin-left: 240px;
+    }
+    .gnav {
+        display: none;
+    }
+
+
+    header {
+        height: 80px;
+    }
+    .header-inner {
+        line-height: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 189px;
+        height: 52px;
+    }
+    .menu {
+        color: #000000;
+    }
+    .header-logo {
+        position: absolute;
+        top: 17px;
+    }
+    .header-menu {
+        font-size: 18px;
+    }
+    header ul  {
+        display: flex;
+    }
+    .header-menu li {
+        margin-left: 36px;
+    }
+    .footer-inner {
+        display: flex;
+        height: 146px;
+        margin-top: 90px;
+        justify-content: space-between;
+        margin-right: 240px;
+        margin-left: 240px;
+    }
+    .footer-menu li{
+        font-size: 16px;
+        padding-top: 15px;
+    }
+    @media only screen and (max-width: 600px){
+        .bp {
+            margin-right: 25px;
+            margin-left: 25px;
+        }
+        .header-menu {
+            display: none;
+        }
+        .sp_menu{
+            height: 20px;
+            position: absolute;
+            right: 25px;
+            top: 30px;
+            width: 30px;
+            z-index: 99;
+        }
+        .menu__line{
+            background: #c4c4c4;
+            display: block;
+            height: 2px;
+            position: absolute;
+            transition:transform .3s;
+            width: 100%;
+        }
+        .menu__line--center{
+            top: 9px;
+        }
+        .menu__line--bottom{
+            bottom: 0;
+        }
+        .menu__line--top.active{
+            top: 8px;
+            transform: rotate(45deg);
+        }
+        .menu__line--center.active{
+            transform:scaleX(0);
+        }
+        .menu__line--bottom.active{
+            bottom: 10px;
+            transform: rotate(135deg);
+        }
+        .footer-inner  {
+            display: inline-block;
+            vertical-align:center;
+            justify-content: normal;
+            text-align: center;
+            text-align: center;
+            width: 100%;
+            margin: 45px 0 60px 0;
+        }
+            /*gnav*/
+        .gnav{
+            background: #ffffff;
+            display: none;
+            height: 100%;
+            position: fixed;
+            width: 100%;
+            z-index: 98;
+            margin-top: 80px;
+        }
+        .gnav__wrap{
+            margin-top: 162px;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+        }
+        .gnav__menu__item{
+            margin: 40px 0;
+        }
+        .gnav__menu__item a{
+            color: #000000;
+            font-size: 2em;
+            font-weight: bold;
+            padding: 40px;
+            text-decoration: none;
+            transition: .5s;
+        }
+        .gnav__menu__item a:hover{
+            color: #666;
+        }
+    }

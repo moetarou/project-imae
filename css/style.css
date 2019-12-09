@@ -1,227 +1,125 @@
-    html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        outline: 0;
-        font-size: 100%;
-        vertical-align: baseline;
-        background: transparent;
-        font-family: YuGothic;
-        letter-spacing: 0.04em;
-        font-weight: bold;
-    }
 
-    ol, ul {
-        list-style: none;
-        text-decoration: none;
+    .kv {
+        background-image: url('../img/kv.jpg');
+        height: 550px;
+        text-align: center;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
-    a:link, a:visited, a:active {
-        text-decoration: none;
-        -webkit-tap-highlight-color: transparent;
-    }
-    :any-link {
-        color: #000000;
-    }
-    .infolink_link {
-        color: #00AD7D;
-        border-bottom: 1px solid #00AD7D;
-    }
-    header {
-        height: 80px;
-        line-height: 80px;
-        display: flex;
-        justify-content: space-between;
-
-    }
-
-    .logo {
-        width: 189px;
-        height: 52px;
-    }
-    .header-logo {
+    .kv-title {
         position: absolute;
-        top: 17px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        color: #ffffff;
+        width: 100%;
     }
-    .menu {
-        color: #000000;
+    h1 {
+        font-size: 72px;
     }
-    .header-menu {
-        font-size: 18px;
+    .kv-sub-title {
+        font-size: 36px;
+        margin-top: 15px;
     }
-    .header-menu li {
-        margin-left: 36px;
+    .page-colum {
+        border-radius: 24px;
+        height: 312px;
+        background-repeat: no-repeat;
+        position: relative;
     }
-    
-    header ul  {
+    .page-colum-title {
+        font-size: 24px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        text-align: center;
+        width: 100%;
+    }
+    .page-colum-title p {
+        margin-top: 30px;
+    }
+
+    h2 {
+        font-size: 44px;
+    }
+
+    .ourbusiness-title h2 {
+        color: #141414;
+    }
+    .companyinfo-title {
+        color: #ffffff;
+    }
+    .ourbusiness {
+        background-image: url('../img/ourbusiness.jpg');
+        margin-top: 70px;
+    }
+    .companyinfo {
+        background-image: url('../img/companyinfo.jpg');
+        margin-top: 20px;
+        background-position: center;
+    }
+    .news {
+        margin-top: 75px;
+    }
+    h3 {
+        font-size: 36px;
+        text-align: center;
+    }
+    .news-colum:first {
+        margin-top: 40px;
+    }
+    .news-colum {
+        background-color: #F2F2F2;
+        border-radius: 24px;
+        padding: 45px 60px;
         display: flex;
-    }
-    .bp {
+        margin-top: 20px;
         margin-right: 240px;
         margin-left: 240px;
     }
-.kv {
-    background-image: url('../img/kv.jpg');
-    height: 550px;
-    text-align: center;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.kv-title {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-    color: #ffffff;
-    width: 100%;
-}
-h1 {
-    font-size: 72px;
-}
-.kv-sub-title {
-    font-size: 36px;
-    margin-top: 15px;
-}
-.page-colum {
-    border-radius: 24px;
-    height: 312px;
-    background-repeat: no-repeat;
-    position: relative;
-
-}
-.page-colum-title {
-    font-size: 24px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-    text-align: center;
-    width: 100%;
-}
-.page-colum-title p {
-    margin-top: 30px;
-}
-.infolink_btn {
-    background-color: #295caa;
-    border-radius: 8px;
-    color: #ffffff;
-    padding: 10px 20px;
-    display: inline-block;
-    margin-top: 40px;
-
-}
-h2 {
-    font-size: 44px;
-}
-
-.ourbusiness-title h2 {
-    color: #141414;
-}
-.companyinfo-title {
-    color: #ffffff;
-}
-
-.ourbusiness {
-    background-image: url('../img/ourbusiness.jpg');
-    margin-top: 70px;
-}
-
-
-.companyinfo {
-    background-image: url('../img/companyinfo.jpg');
-    margin-top: 20px;
-    background-position: center;
-}
-
-.news {
-    margin-top: 75px;
-}
-h3 {
-    font-size: 36px;
-    text-align: center;
-}
-.news-colum:first {
-    margin-top: 40px;
-}
-.news-colum {
-    background-color: #F2F2F2;
-    border-radius: 24px;
-    padding: 45px 60px;
-    display: flex;
-    margin-top: 20px;
-    margin-right: 240px;
-    margin-left: 240px;
-}
-.news-colum-detail {
-    padding-right: 50px;
-}
-.footer-inner {
-    display: flex;
-    height: 146px;
-    margin-top: 90px;
-    justify-content: space-between;
-    margin-right: 240px;
-    margin-left: 240px;
-}
-.footer-menu li{
-    font-size: 16px;
-    padding-top: 15px;
-}
-
-@media only screen and (max-width: 600px){
-    .bp {
-        margin-right: 25px;
-        margin-left: 25px;
+    .news-colum-detail {
+        padding-right: 50px;
+    }
+    @media only screen and (max-width: 600px){
+    h1 {
+        font-size: 36px;
     }
     .kv {
-    background-position: right 35% bottom 5%;
-}
-    h1 {
-    font-size: 36px;
+        background-position: right 35% bottom 5%;
     }
     .kv-sub-title {
-    font-size: 24px;
-}
+        font-size: 24px;
+    }
     .ourbusiness {
         margin-top: 40px;
     }
     h2 {
-    font-size: 36px;
-}
-.news {
-    margin-top: 30px;
-}
-.companyinfo {
-    margin-top: 40px;
-}
-.news-colum {
-    margin-right: 25px;
-    margin-left: 25px;
-    padding: 30px;
-    display: block;
-    margin-top: 40px;
-}
-
-.page-colum-title p {
-    font-size: 20px;
-    margin-top: 10px;
-}
-.infolink_btn {
-    font-size: 16px;
-    margin-top: 30px;
-}
-h3 {
-    display: none;
-}
-.footer-inner  {
-    display: inline-block;
-    vertical-align:center;
-    justify-content: normal;
-    text-align: center;
-    text-align: center;
-    width: 100%;
-    margin: 45px 0 0 0;
-}
-
-}
+        font-size: 36px;
+    }
+    .news {
+        margin-top: 30px;
+    }
+    .companyinfo {
+        margin-top: 40px;
+    }
+    .news-colum {
+        margin-right: 25px;
+        margin-left: 25px;
+        padding: 30px;
+        display: block;
+        margin-top: 40px;
+    }
+    .page-colum-title p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .infolink_btn {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    h3 {
+        display: none;
+    }
+    }

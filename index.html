@@ -10,131 +10,38 @@
 	<link rel="shortcut icon" type="image/png" href="/favicon.png">
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
     <link href="./css/style.css" rel="stylesheet" type="text/css">
-    <style>
-
-.sp_menu {
-    position: fixed;
-    display: none;
-    top: 10px;
-    right: 25px;
-    width: 58px;
-    height: 58px;
-    z-index: 102;
-}
-.sp_menu span.l1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 36px;
-    height: 2px;
-    margin-top: -13px;
-    margin-left: -12px;
-    background: #C4C4C4;
-    -ms-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-transform-origin: center center;
-    -webkit-transition: all 0.6s 0s cubic-bezier(0.875, 0.005, 0.09, 0.99);
-    -o-transition: all 0.6s 0s cubic-bezier(0.875, 0.005, 0.09, 0.99);
-    transition: all 0.6s 0s cubic-bezier(0.875, 0.005, 0.09, 0.99);
-}
-.sp_menu span.l2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 36px;
-    height: 2px;
-    margin-top: -1px;
-    margin-left: -12px;
-    background: #C4C4C4;
-    -ms-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-transform-origin: center center;
-    -webkit-transition: all 0.6s 0s cubic-bezier(0.875, 0.005, 0.09, 0.99);
-    -o-transition: all 0.6s 0s cubic-bezier(0.875, 0.005, 0.09, 0.99);
-    transition: all 0.6s 0s cubic-bezier(0.875, 0.005, 0.09, 0.99);
-}
-.sp_menu span.l3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 36px;
-    height: 2px;
-    margin-top: 10.5px;
-    margin-left: -12px;
-    background: #C4C4C4;
-    -ms-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-transform-origin: center center;
-    -webkit-transition: all 0.6s 0s cubic-bezier(0.875, 0.005, 0.09, 0.99);
-    -o-transition: all 0.6s 0s cubic-bezier(0.875, 0.005, 0.09, 0.99);
-    transition: all 0.6s 0s cubic-bezier(0.875, 0.005, 0.09, 0.99);
-}
-@media only screen and (max-width: 900px){
-.navigation {
-    display: block;
-    position: fixed;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-    top: 58px;
-    left: 0;
-    z-index: 101;
-    background: #FFF;
-    width: 100%;
-    height: -webkit-calc(100% - 58px);
-    height: calc(100% - 58px);
-    text-align: left;
-    line-height: 1;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all 0.8s 0s ease;
-    -o-transition: all 0.8s 0s ease;
-    transition: all 0.8s 0s ease;
-}
-.navigation .inner {
-    position: relative;
-    min-height: 100%;
-}
-.navigation ul.menu {
-    padding-top: 12px;
-    padding-bottom: 60px;
-}
-}
-@media only screen and (max-width: 899px){
-.sp_menu {
-    position: absolute;
-    display: block;
-}
-}
-@media only screen and (max-width: 899px){
-    .header-menu {
-        display: none;
-    }
-}
-</style>
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
 </head>
-<body cz-shortcut-listen="true" class="" style="overflow: auto;">
-    <header class="bp">
-        <a href=""><img src="./img/imaekensetsu.png" alt="imaekensetsu" class="header-logo logo">
-        </a>
-        <ul class="menu header-menu">
-            <a href="">
-                <li>会社概要</li>
-            </a>
-            <a href="">
-                <li>事業概要</li>
-            </a>
-        </ul>
-    </header>
-    <a href="javascript: void(0);" class="sp_menu"><span class="l1"></span><span class="l2"></span><span class="l3"></span></a>
-    <nav id="navigation" class="navigation">
-        <div class="inner">
-            <ul class="menu">
-                <li>会社概要</li>
-                <li>事業概要</li>
+    <a class="sp_menu">
+        <span class="menu__line menu__line--top"></span>
+        <span class="menu__line menu__line--center"></span>
+        <span class="menu__line menu__line--bottom"></span>
+    </a>
+    <nav class="gnav">
+        <div class="gnav__wrap">
+
+            <ul class="gnav__menu">
+                <li class="gnav__menu__item"><a href="">会社概要</a></li>
+                <li class="gnav__menu__item"><a href="">事業概要</a></li>
             </ul>
         </div>
     </nav>
+<body cz-shortcut-listen="true" class="" style="overflow: auto;">
+    <header>
+        <div class="header-inner bp">
+            <a href=""><img src="./img/imaekensetsu.png" alt="imaekensetsu" class="header-logo logo">
+            </a>
+            <ul class="menu header-menu">
+                <a href="">
+                    <li>会社概要</li>
+                </a>
+                <a href="">
+                    <li>事業概要</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
     <main>
         <section class="kv">
             <div class="kv-title">
@@ -168,10 +75,13 @@
             </div>
             <div class="news-colum">
                 <p class="news-colum-detail">2019/12/19</p>
-                <p class="news-colum-date">井前建設株式会社社長が取材されて、なにかしらのなにかに乗りました。<br><a href="" class="infolink_link">詳しくはこちら</a></p>
+                <p class="news-colum-date">井前建設株式会社社長が取材されて、なにかしらのなにかに乗りました。<br>
+                    <a href="" class="infolink_link">詳しくはこちら</a>
+                </p>
             </div>
         </section>
     </main>
+    
     <footer>
         <div class="footer-inner">
             <img src="./img/imaekensetsu.png" alt="imaekensetsu" class="footer-logo logo">
@@ -180,30 +90,7 @@
             </ul>
         </div>
     </footer>
-    <script src="/assets/js/jquery-1.12.4.min.js"></script>
-	<script src="/assets/js/jquery.libs.js" charset="utf-8"></script>
-    <script>
-    $(function() {
-$('.sp_menu').click(function (e) {
-  e.preventDefault();
-  if($("body").hasClass("active")){
-    $("body").removeClass("active");
-    $("body").css("overflow","auto");
-  }else{
-    $("body").addClass("active");
-    //$("body").css("overflow","hidden");
-  }
-});
-$('#navigation ul.menu > li > a').click(function (e) {
-  e.preventDefault();
-  if($(this).parent().hasClass("active")){
-    $(this).parent().removeClass("active");
-    $(this).parent().find(".dr_menu").slideToggle();
-  }else{
-    $(this).parent().addClass("active");
-    $(this).parent().find(".dr_menu").slideToggle();
-  }
-});
-    });
-</script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+	<script src="./js/script.js" charset="utf-8"></script>
 </body>
